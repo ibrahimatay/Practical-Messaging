@@ -8,3 +8,4 @@ The goal is to showcase how these messaging systems can be integrated and utiliz
 ## Notes
 
 - [Apache Kafka - Confluence](https://cwiki.apache.org/confluence/display/KAFKA/Index)
+- [Apache Kafka - Github Mirror](https://github.com/apache/kafka)
