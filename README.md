@@ -6,7 +6,7 @@ The goal is to showcase how these messaging systems can be integrated and utiliz
 
 |            Sample             |                                                                                                    Description                                                                                                     |
 |:-----------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|  [Hello world](/hello-world)  | This Spring Boot application sends a "Hello world!" message to Kafka every 5 seconds and listens to these messages with a consumer. The required Kafka topic is automatically created when the application starts. |
+|  [Hello world](/hello-world/src/main/java/com/ibrahimatay/Main.java)  | This Spring Boot application sends a "Hello world!" message to Kafka every 5 seconds and listens to these messages with a consumer. The required Kafka topic is automatically created when the application starts. |
 
 
 
