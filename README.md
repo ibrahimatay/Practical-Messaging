@@ -1,8 +1,8 @@
 # Practical Messaging
 
-This project demonstrates various messaging patterns and application examples using Kafka and Java.
+This project includes various messaging patterns and application examples using Apache Kafka and Java.
 
-The goal is to showcase how these messaging systems can be integrated and utilized in real-world scenarios, providing a comprehensive guide for developers working with distributed systems.
+It aims to demonstrate how messaging systems can be integrated and utilized in real-world scenarios, providing a comprehensive guide for developers working with distributed systems.
 
 |            Sample             |                                                                                                    Description                                                                                                     |
 |:-----------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
