@@ -5,7 +5,7 @@ This project demonstrates various messaging patterns and application examples us
 The goal is to showcase how these messaging systems can be integrated and utilized in real-world scenarios, providing a comprehensive guide for developers working with distributed systems.
 
 |            Sample             |                                                                                                    Description                                                                                                     |
-|:-----------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|:-----------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  [Hello world](/hello-world/src/main/java/com/ibrahimatay/Main.java)  | This Spring Boot application sends a "Hello world!" message to Kafka every 5 seconds and listens to these messages with a consumer. The required Kafka topic is automatically created when the application starts. |
 
 
