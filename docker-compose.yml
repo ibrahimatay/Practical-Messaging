@@ -9,6 +9,7 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_SERVER_ID: 1
       ZOOKEEPER_SERVERS: zoo1:2888:3888;zoo2:2888:3888;zoo3:2888:3888
+      ALLOW_ANONYMOUS_LOGIN: "yes"
 
   zoo2:
     image: confluentinc/cp-zookeeper:7.8.0
@@ -20,6 +21,7 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2182
       ZOOKEEPER_SERVER_ID: 2
       ZOOKEEPER_SERVERS: zoo1:2888:3888;zoo2:2888:3888;zoo3:2888:3888
+      ALLOW_ANONYMOUS_LOGIN: "yes"
 
   zoo3:
     image: confluentinc/cp-zookeeper:7.8.0
@@ -31,6 +33,7 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2183
       ZOOKEEPER_SERVER_ID: 3
       ZOOKEEPER_SERVERS: zoo1:2888:3888;zoo2:2888:3888;zoo3:2888:3888
+      ALLOW_ANONYMOUS_LOGIN: "yes"
 
 
   kafka1:
@@ -71,3 +74,21 @@ services:
       DYNAMIC_CONFIG_ENABLED: 'true'
       KAFKA_CLUSTERS_0_NAME: wizard_test
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka1:29092
+
+  zoonavigator:
+    container_name: zoonavigator
+    image: elkozmon/zoonavigator:latest
+    environment:
+      # Tells the HTTP server which port to bind to. To disable HTTP set this variable to disabled.
+      HTTP_PORT: 9000
+
+      # If set, ZooNavigator will use this value as a default connection string and skip the connect form,
+      # automatically connecting to listed ZooKeeper servers.
+      AUTO_CONNECT_CONNECTION_STRING: 'zoo1:2888:3888;zoo2:2888:3888;zoo3:2888:3888'
+
+    ports:
+      - 9000:9000
+    depends_on:
+      - zoo1
+      - zoo2
+      - zoo3
