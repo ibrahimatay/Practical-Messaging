@@ -17,3 +17,4 @@ It aims to demonstrate how messaging systems can be integrated and utilized in r
 - [Open-Source Web UI for Apache Kafka Management](https://github.com/provectus/kafka-ui)
 - [kafka-stack-docker-compose](https://github.com/conduktor/kafka-stack-docker-compose)
 - [Spring for Apache Kafka](https://spring.io/projects/spring-kafka)
+- [Web-based ZooKeeper UI / editor / browser](https://github.com/elkozmon/zoonavigator)
