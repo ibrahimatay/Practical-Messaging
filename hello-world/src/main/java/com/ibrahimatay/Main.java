@@ -27,14 +27,14 @@ public class Main  {
     @Bean
     CommandLineRunner run(MessageProducer producer){
         return args -> {
-            IntStream.range(0, 100).forEach(index -> {
+            for(int index: IntStream.range(0, 100).boxed().toList()){
                 producer.sendMessage(Constants.TOPIC_NAME, "Hello world! %s".formatted(index));
                 try {
                     TimeUnit.SECONDS.sleep(5);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-            });
+            }
           System.out.println("Sent!");
         };
     }
