@@ -1,4 +1,5 @@
 # Practical Messaging
+[![.github/workflows/maven.yml](https://github.com/ibrahimatay/Practical-Messaging/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/ibrahimatay/Practical-Messaging/actions/workflows/maven.yml)
 
 This project includes various messaging patterns and application examples using Apache Kafka and Java.
 
