@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hello-world</module>
+        <module>filewatcher-connecter</module>
     </modules>
 
     <properties>
